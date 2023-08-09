@@ -19,10 +19,7 @@ export function Logomark({ invert = false, filled = false, ...props }) {
         strokeWidth="1.5"
       />
       <defs>
-        <path
-          id="logomark-path"
-          d="M3.25 26v.75H7c1.305 0 2.384-.21 3.346-.627.96-.415 1.763-1.02 2.536-1.752.695-.657 1.39-1.443 2.152-2.306l.233-.263c.864-.975 1.843-2.068 3.071-3.266 1.209-1.18 2.881-1.786 4.621-1.786h5.791V5.25H25c-1.305 0-2.384.21-3.346.627-.96.415-1.763 1.02-2.536 1.751-.695.658-1.39 1.444-2.152 2.307l-.233.263c-.864.975-1.843 2.068-3.071 3.266-1.209 1.18-2.881 1.786-4.621 1.786H3.25V26Z"
-        />
+      
         <clipPath id="logomark-clip">
           <use href="#logomark-path" />
         </clipPath>
@@ -46,8 +43,8 @@ export function Logo({
     <svg
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
-      width="32.000000pt"
-      height="32.000000pt"
+      width="42.000000pt"
+      height="42.000000pt"
       viewBox="0 0 1539.000000 1434.000000"
       preserveAspectRatio="xMidYMid meet"
     >
@@ -67,7 +64,7 @@ export function Logo({
     <div className="flex items-center">
       {logoSvg}
 
-      <h1 className="ml-2 font-bold text-xl">Drop The Code.</h1>
+      <h1 className="ml-4 mt-8 max-sm:mt-1  font-bold text-xl">Drop The Code.</h1>
     </div>
   );
 }

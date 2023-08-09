@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
@@ -19,6 +20,7 @@ import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 import { StylizedImage } from '@/components/StylizedImage'
+import homeImg from '@/images/team/homeImg.jpeg'
 
 const clients = [
   ['Phobia', logoPhobiaLight],
@@ -33,7 +35,7 @@ const clients = [
 
 function Clients() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+    <div className="mt-24 rounded-4xl bg-[#f28500] py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
@@ -243,13 +245,14 @@ export default async function Home() {
       </h2>
     </FadeIn>
 
-    <FadeIn className="w-[30%] flex-none lg:w-[40rem]">
-      <StylizedImage
-        src={imageLaptop}
-        sizes="(max-width: 1024px) 42rem, 31rem"
-        className="justify-center lg:justify-end w-45 h-90 ml-10"
-      />
-    </FadeIn>
+    <FadeIn className="w-[50%] flex-none img-fluid">
+  <StylizedImage
+    src={homeImg}
+    sizes="(max-width: 1024px) 42rem, 31rem"
+    className="justify-center lg:justify-end w-full h-auto lg:w-45 ml-10"
+  />
+</FadeIn>
+
   </div>
 </Container>
 

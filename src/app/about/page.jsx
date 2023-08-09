@@ -25,7 +25,7 @@ import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 
 function Culture() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
+    <div className="mt-24 rounded-4xl bg-[#f28500] py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro
         eyebrow="Our culture"
         title="Balance your passion with your passion for life."
